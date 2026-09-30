@@ -8,8 +8,8 @@ the causal mask and weight tying are all written explicitly.
 import math
 
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
+from torch import nn
 
 
 class Transformer(nn.Module):
@@ -73,7 +73,7 @@ class Transformer(nn.Module):
         return layer["w_o"](weights @ v)
 
     def forward(self, x):
-        batch_size, seq_len = x.size()
+        _, seq_len = x.size()
         positions = torch.arange(seq_len, device=x.device).unsqueeze(0)
         h = self.embedding(x) + self.pos_embedding(positions)
 

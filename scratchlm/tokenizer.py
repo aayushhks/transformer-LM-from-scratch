@@ -22,7 +22,7 @@ def basic_tokenize(text, lower=False):
 class BaseTokenizer:
     """Shared special-token handling for the concrete tokenizers."""
 
-    special_tokens = ["<pad>", "<unk>", "<s>", "</s>"]
+    special_tokens = ("<pad>", "<unk>", "<s>", "</s>")
     end_of_word = "▁"  # marks the end of a word so suffixes can merge
 
     def __init__(self):
