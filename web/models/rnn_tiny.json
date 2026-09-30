@@ -1,0 +1,59 @@
+{
+  "name": "rnn_tiny",
+  "model_type": "rnn",
+  "vocab_size": 300,
+  "hidden_dim": 64,
+  "context_len": 32,
+  "num_heads": 4,
+  "num_layers": 2,
+  "params": 47020,
+  "weights": "rnn_tiny.bin",
+  "tensors": {
+    "W_ih": {
+      "offset": 0,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "W_hh": {
+      "offset": 4096,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "b_ih": {
+      "offset": 8192,
+      "shape": [
+        64
+      ]
+    },
+    "b_hh": {
+      "offset": 8256,
+      "shape": [
+        64
+      ]
+    },
+    "embedding.weight": {
+      "offset": 8320,
+      "shape": [
+        300,
+        64
+      ]
+    },
+    "fc.weight": {
+      "offset": 27520,
+      "shape": [
+        300,
+        64
+      ]
+    },
+    "fc.bias": {
+      "offset": 46720,
+      "shape": [
+        300
+      ]
+    }
+  }
+}

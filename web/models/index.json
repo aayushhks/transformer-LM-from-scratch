@@ -1,0 +1,8 @@
+{
+  "models": [
+    "transformer_tiny",
+    "lstm_tiny",
+    "rnn_tiny"
+  ],
+  "default": "transformer_tiny"
+}

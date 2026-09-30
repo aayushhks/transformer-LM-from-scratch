@@ -1,0 +1,85 @@
+{
+  "name": "lstm_tiny",
+  "model_type": "lstm",
+  "vocab_size": 300,
+  "hidden_dim": 64,
+  "context_len": 32,
+  "num_heads": 4,
+  "num_layers": 2,
+  "params": 80300,
+  "weights": "lstm_tiny.bin",
+  "tensors": {
+    "W_ih": {
+      "offset": 0,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "W_hh": {
+      "offset": 4096,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "b_ih": {
+      "offset": 8192,
+      "shape": [
+        64
+      ]
+    },
+    "b_hh": {
+      "offset": 8256,
+      "shape": [
+        64
+      ]
+    },
+    "W_ih_lstm": {
+      "offset": 8320,
+      "shape": [
+        64,
+        256
+      ]
+    },
+    "W_hh_lstm": {
+      "offset": 24704,
+      "shape": [
+        64,
+        256
+      ]
+    },
+    "b_ih_lstm": {
+      "offset": 41088,
+      "shape": [
+        256
+      ]
+    },
+    "b_hh_lstm": {
+      "offset": 41344,
+      "shape": [
+        256
+      ]
+    },
+    "embedding.weight": {
+      "offset": 41600,
+      "shape": [
+        300,
+        64
+      ]
+    },
+    "fc.weight": {
+      "offset": 60800,
+      "shape": [
+        300,
+        64
+      ]
+    },
+    "fc.bias": {
+      "offset": 80000,
+      "shape": [
+        300
+      ]
+    }
+  }
+}

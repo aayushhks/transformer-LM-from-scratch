@@ -1,0 +1,183 @@
+{
+  "name": "transformer_tiny",
+  "model_type": "transformer",
+  "vocab_size": 300,
+  "hidden_dim": 64,
+  "context_len": 32,
+  "num_heads": 4,
+  "num_layers": 2,
+  "params": 120704,
+  "weights": "transformer_tiny.bin",
+  "tensors": {
+    "embedding.weight": {
+      "offset": 0,
+      "shape": [
+        300,
+        64
+      ]
+    },
+    "pos_embedding.weight": {
+      "offset": 19200,
+      "shape": [
+        32,
+        64
+      ]
+    },
+    "layers.0.w_q.weight": {
+      "offset": 21248,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "layers.0.w_k.weight": {
+      "offset": 25344,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "layers.0.w_v.weight": {
+      "offset": 29440,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "layers.0.w_o.weight": {
+      "offset": 33536,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "layers.0.w_up.weight": {
+      "offset": 37632,
+      "shape": [
+        256,
+        64
+      ]
+    },
+    "layers.0.w_up.bias": {
+      "offset": 54016,
+      "shape": [
+        256
+      ]
+    },
+    "layers.0.w_down.weight": {
+      "offset": 54272,
+      "shape": [
+        64,
+        256
+      ]
+    },
+    "layers.0.w_down.bias": {
+      "offset": 70656,
+      "shape": [
+        64
+      ]
+    },
+    "layers.1.w_q.weight": {
+      "offset": 70720,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "layers.1.w_k.weight": {
+      "offset": 74816,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "layers.1.w_v.weight": {
+      "offset": 78912,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "layers.1.w_o.weight": {
+      "offset": 83008,
+      "shape": [
+        64,
+        64
+      ]
+    },
+    "layers.1.w_up.weight": {
+      "offset": 87104,
+      "shape": [
+        256,
+        64
+      ]
+    },
+    "layers.1.w_up.bias": {
+      "offset": 103488,
+      "shape": [
+        256
+      ]
+    },
+    "layers.1.w_down.weight": {
+      "offset": 103744,
+      "shape": [
+        64,
+        256
+      ]
+    },
+    "layers.1.w_down.bias": {
+      "offset": 120128,
+      "shape": [
+        64
+      ]
+    },
+    "gamma_attn.0": {
+      "offset": 120192,
+      "shape": [
+        64
+      ]
+    },
+    "gamma_attn.1": {
+      "offset": 120256,
+      "shape": [
+        64
+      ]
+    },
+    "beta_attn.0": {
+      "offset": 120320,
+      "shape": [
+        64
+      ]
+    },
+    "beta_attn.1": {
+      "offset": 120384,
+      "shape": [
+        64
+      ]
+    },
+    "gamma_mlp.0": {
+      "offset": 120448,
+      "shape": [
+        64
+      ]
+    },
+    "gamma_mlp.1": {
+      "offset": 120512,
+      "shape": [
+        64
+      ]
+    },
+    "beta_mlp.0": {
+      "offset": 120576,
+      "shape": [
+        64
+      ]
+    },
+    "beta_mlp.1": {
+      "offset": 120640,
+      "shape": [
+        64
+      ]
+    }
+  }
+}
